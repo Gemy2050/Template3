@@ -1,26 +1,9 @@
 
 skillWidth();
-megaMenu();
 // topScroll();
 eventTime();
 
 
-function megaMenu() {
-  let myElement = document.querySelector(".clk");
-  let myLink = document.querySelector(".clk a");
-  let target = document.querySelector(".mega-menu");
-  let counter = 0;
-  myElement.onclick = function () {
-  counter++;
-  if (counter % 2 != 0) {
-    target.style.cssText = "opacity: 1; z-index: 100; top: calc(100% + 2px);";
-    myLink.style.color = "var(--main-color)";
-  } else {
-    target.style.cssText = "opacity: 0; z-index: -1; top: calc(100% + 2px);";
-    myLink.style.color = "initial";
-  }
-  };
-}
 
 function topScroll() {
   let element = document.createElement("span");
