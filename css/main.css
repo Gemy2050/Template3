@@ -1143,7 +1143,7 @@ ul {
   border-top: 1px solid #eee;
 }
 .pricing .box ul li::before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   content: "\f00c";
   margin-right: 10px;
   font-weight: 900;
