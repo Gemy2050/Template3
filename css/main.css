@@ -113,9 +113,9 @@ ul {
   position: absolute;
 }
 @media (max-width: 991px) {
-    .dots {
-        display: none;
-    }
+  .dots {
+    display: none;
+  }
 }
 .dots-up {
   top: 200px;
@@ -1469,7 +1469,7 @@ ul {
   transition: var(--main-transition);
 }
 .footer .box .links li a::before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   content: "\F101";
   font-weight: 900;
   margin-right: 10px;
