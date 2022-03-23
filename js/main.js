@@ -1,14 +1,12 @@
 
+  let element = document.createElement("span");
+  element.appendChild(document.createTextNode("Up"));
+  document.body.appendChild(element);
+  element.className = "top-button";
+  let gallery_section = document.querySelector("#gallery");
 
 // ****************************************************************
-/*
- ** Countdown Timer
- ** Video URL: https://www.youtube.com/watch?v=eFsiOTJrrE8
- */
-
 // The End Of The Year Date
-// 1000 milliseconds = 1 Second
-
 let countDownDate = new Date("Dec 31, 2022 23:59:59").getTime();
 // console.log(countDownDate);
 
@@ -35,16 +33,6 @@ let counter = setInterval(() => {
   }
 }, 1000);
 
-/*
- ** Animate Width On Scrolling
- ** Video URL: https://youtu.be/sbIoIKI9FOc
- */
-
-/*
- ** Increase Numbers On Scrolling
- ** Video URL: https://youtu.be/PLsUdgLnzgQ
- */
-
 let progressSpans = document.querySelectorAll(".the-progress span");
 let section = document.querySelector(".our-skills");
 
@@ -66,6 +54,13 @@ window.onscroll = function () {
     }
     started = true;
   }
+  // Top Scroll Button
+  if (this.scrollY >= gallery_section.offsetTop) {
+    element.style.right = "10px";
+    element.onclick = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  } else element.style.right = "-50px";
 };
 
 function startCount(el) {

@@ -836,7 +836,7 @@ ul {
   top: 0;
   height: 100%;
   background-color: var(--main-color);
-  transition: width .8s;
+  transition: width .9s;
 }
 /* End Skills */
 /* Start Work Steps */
@@ -1598,7 +1598,7 @@ ul {
   background-color: var(--main-color);
   display: block;
   width: fit-content;
-  padding: 4px 10px;
+  padding: 3px 6px;
   color: white;
   font-weight: bold;
   cursor: pointer;
