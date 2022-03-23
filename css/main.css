@@ -1613,3 +1613,11 @@ ul {
 .top-button:hover {
   background-color: #0d6dbb;
 }
+/* .stats .money {
+  position: relative;
+  width: 200px;
+} */
+.money::after {
+  content: 'K';
+  /* position: absolute; */
+}
