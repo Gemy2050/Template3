@@ -1621,3 +1621,21 @@ ul {
   content: 'K';
   /* position: absolute; */
 }
+
+.landing .container .text h1 {
+  width: fit-content;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  animation: control-width 3s 1s both;
+}
+
+@keyframes control-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% - 4%);
+  }
+} 

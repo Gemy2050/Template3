@@ -72,3 +72,5 @@ function startCount(el) {
     }
   }, 2000 / goal);
 }
+
+
